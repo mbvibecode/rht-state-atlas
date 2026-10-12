@@ -517,6 +517,16 @@ main > section {
   align-items: start;
 }
 
+.atlas-content,
+.canvas-card,
+.canvas-body,
+.map-layout,
+.mapbox,
+.map {
+  min-width: 0;
+  max-width: 100%;
+}
+
 .control-panel,
 .canvas-card,
 .insight-card,
@@ -750,14 +760,15 @@ summary:focus-visible {
 
 .map-layout {
   display: grid;
-  grid-template-columns: minmax(530px, 1.7fr) minmax(245px, 0.85fr);
+  grid-template-columns: minmax(0, 1.7fr) minmax(230px, 0.85fr);
   gap: 20px;
   align-items: stretch;
 }
 
 .mapbox {
+  width: 100%;
   min-width: 0;
-  overflow: visible;
+  overflow: hidden;
   padding: 6px;
   border-radius: 13px;
   background: linear-gradient(180deg, #f3f4ef, #ecefe9);
@@ -773,12 +784,13 @@ summary:focus-visible {
 .map {
   display: grid;
   width: 100%;
+  max-width: 100%;
   min-width: 0;
   grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(8, 44px);
   gap: 5px;
-  overflow: visible;
-  padding: 3px;
+  overflow: hidden;
+  padding: 5px;
 }
 
 .tile {
@@ -1664,7 +1676,7 @@ td.miss {
   }
 
   .map-layout {
-    grid-template-columns: minmax(520px, 1.6fr) minmax(230px, 0.8fr);
+    grid-template-columns: minmax(0, 1.6fr) minmax(230px, 0.8fr);
   }
 }
 
@@ -1859,7 +1871,7 @@ td.miss {
   }
 
   .mapbox {
-    margin-inline: -4px;
+    margin-inline: 0;
   }
 
   .map {
