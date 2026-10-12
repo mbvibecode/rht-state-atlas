@@ -757,7 +757,7 @@ summary:focus-visible {
 
 .mapbox {
   min-width: 0;
-  overflow-x: auto;
+  overflow: visible;
   padding: 6px;
   border-radius: 13px;
   background: linear-gradient(180deg, #f3f4ef, #ecefe9);
@@ -772,8 +772,9 @@ summary:focus-visible {
 
 .map {
   display: grid;
-  min-width: 590px;
-  grid-template-columns: repeat(12, 1fr);
+  width: 100%;
+  min-width: 0;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
   grid-template-rows: repeat(8, 44px);
   gap: 5px;
   overflow: visible;
@@ -1862,7 +1863,16 @@ td.miss {
   }
 
   .map {
-    min-width: 575px;
+    width: 100%;
+    min-width: 0;
+    grid-template-rows: repeat(8, 32px);
+    gap: 3px;
+  }
+
+  .tile {
+    padding: 2px;
+    border-radius: 5px;
+    font-size: 9px;
   }
 
   .metrics,
