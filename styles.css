@@ -1491,6 +1491,89 @@ td.miss {
   line-height: 1.6;
 }
 
+.funding-summary {
+  display: grid;
+  min-width: 0;
+  gap: 7px;
+  margin-top: 15px;
+  padding: 13px 14px;
+  border: 1px solid rgba(173, 90, 0, 0.2);
+  border-left: 4px solid var(--orange);
+  border-radius: 10px;
+  background: rgba(250, 234, 216, 0.58);
+}
+
+.funding-summary p {
+  margin: 0;
+}
+
+.funding-label {
+  color: var(--orange-dark);
+  font: 750 8.5px/1.25 Consolas, "Courier New", monospace;
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+}
+
+.funding-total {
+  display: flex;
+  min-width: 0;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 4px 9px;
+}
+
+.funding-total strong {
+  color: var(--orange-dark);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.funding-total span {
+  color: var(--ink);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.funding-breakdown {
+  color: var(--ink-soft);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.funding-summary a {
+  width: fit-content;
+  color: var(--orange-dark);
+  font-size: 10px;
+  font-weight: 750;
+  line-height: 1.35;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.state-card .funding-summary {
+  margin-top: 10px;
+  padding: 11px 12px;
+  background: rgba(255, 255, 255, 0.58);
+}
+
+.state-card .funding-total {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.state-card .funding-total strong {
+  font-size: 20px;
+}
+
+.state-card .funding-details > small {
+  display: block;
+  margin-top: 8px;
+  line-height: 1.4;
+}
+
 .card details {
   margin-top: 15px;
   padding-top: 13px;
