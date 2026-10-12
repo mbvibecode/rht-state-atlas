@@ -328,7 +328,12 @@ a:hover {
 .hero-meta {
   margin-top: 21px;
   color: rgba(255, 255, 255, 0.42);
-  font-size: 9px;
+  font-family: "Segoe UI", Arial, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: 1.55;
+  text-transform: none;
 }
 
 .hero-visual {
