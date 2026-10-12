@@ -107,7 +107,7 @@ a:hover {
 /* Hero */
 .hero {
   position: relative;
-  min-height: 670px;
+  min-height: 560px;
   overflow: hidden;
   padding: 0;
   border: 0;
@@ -237,11 +237,11 @@ a:hover {
   position: relative;
   z-index: 2;
   display: grid;
-  min-height: 582px;
+  min-height: 472px;
   grid-template-columns: minmax(0, 1fr) 420px;
   gap: 58px;
   align-items: center;
-  padding: 66px 0 88px;
+  padding: 42px 0 62px;
 }
 
 .hero-copy {
@@ -256,10 +256,10 @@ a:hover {
 
 .hero h1 {
   max-width: 780px;
-  margin: 17px 0 24px;
+  margin: 14px 0 19px;
   color: #fffefa;
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(55px, 6.5vw, 88px);
+  font-size: clamp(52px, 5.7vw, 78px);
   font-weight: 400;
   letter-spacing: -0.055em;
   line-height: 0.98;
@@ -272,7 +272,7 @@ a:hover {
 
 .hero-dek {
   max-width: 620px;
-  margin: 0 0 30px;
+  margin: 0 0 24px;
   color: rgba(255, 255, 255, 0.74);
   font-size: 18px;
   line-height: 1.55;
@@ -326,7 +326,7 @@ a:hover {
 }
 
 .hero-meta {
-  margin-top: 28px;
+  margin-top: 21px;
   color: rgba(255, 255, 255, 0.42);
   font-size: 9px;
 }
@@ -1103,6 +1103,7 @@ summary:focus-visible {
 
 /* Matrices */
 .comparison-section {
+  padding-block: 88px;
   background:
     radial-gradient(circle at 82% 18%, rgba(148, 217, 207, 0.1), transparent 26%),
     var(--navy-deep);
@@ -1127,12 +1128,20 @@ summary:focus-visible {
 
 .matrix-stack {
   display: grid;
-  gap: 24px;
+  grid-template-columns: minmax(0, 1.55fr) minmax(360px, 0.85fr);
+  gap: 18px;
+  align-items: start;
 }
 
 .matrix-card {
   overflow: hidden;
+  border-radius: 18px;
   background: var(--paper);
+}
+
+.matrix-card .card-heading {
+  min-height: 70px;
+  padding-block: 14px;
 }
 
 .matrix-note {
@@ -1140,7 +1149,7 @@ summary:focus-visible {
 }
 
 .table-wrap {
-  max-height: 590px;
+  max-height: 510px;
   overflow: auto;
   border: 0;
   border-radius: 0;
@@ -1151,6 +1160,12 @@ table {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
+}
+
+.matrix-card table {
+  width: max-content;
+  min-width: 0;
+  table-layout: fixed;
 }
 
 thead th {
@@ -1166,6 +1181,23 @@ thead th {
   letter-spacing: 0.02em;
 }
 
+.matrix-card thead th:not(:first-child) {
+  width: 52px;
+  min-width: 52px;
+  max-width: 52px;
+  padding: 10px 3px;
+  text-align: center;
+}
+
+.matrix-card thead th abbr {
+  border: 0;
+  color: var(--ink-soft);
+  font-size: 8px;
+  letter-spacing: 0.05em;
+  text-decoration: none;
+  cursor: help;
+}
+
 td {
   height: 31px;
   padding: 5px;
@@ -1175,18 +1207,29 @@ td {
   text-align: center;
 }
 
+.matrix-card td {
+  width: 52px;
+  min-width: 52px;
+  height: 36px;
+  padding: 4px;
+  border-color: var(--paper);
+  background: #f1f3ee;
+}
+
 tbody th,
 thead th:first-child {
   position: sticky;
   left: 0;
   z-index: 3;
-  min-width: 148px;
+  width: 132px;
+  min-width: 132px;
+  max-width: 132px;
   text-align: left;
 }
 
 tbody th {
-  height: 31px;
-  padding: 5px 8px;
+  height: 36px;
+  padding: 5px 9px;
   border-right: 2px solid var(--paper);
   border-bottom: 2px solid var(--paper);
   background: white;
@@ -1216,6 +1259,33 @@ td.technology-hit {
 td.miss {
   background: #e4e9e6;
   color: #596c6d;
+}
+
+.matrix-box {
+  display: inline-grid;
+  width: 25px;
+  height: 25px;
+  place-items: center;
+  border: 1px solid rgba(16, 43, 50, 0.16);
+  border-radius: 6px;
+  font: 750 10px/1 "Segoe UI", Arial, sans-serif;
+}
+
+.matrix-box.program {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: white;
+}
+
+.matrix-box.technology {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: white;
+}
+
+.matrix-box.miss {
+  background: transparent;
+  color: #788987;
 }
 
 /* State digest */
@@ -1510,13 +1580,13 @@ td.miss {
 
 @media (max-width: 860px) {
   .hero {
-    min-height: 620px;
+    min-height: 520px;
   }
 
   .hero-inner {
     display: block;
-    min-height: 532px;
-    padding-top: 76px;
+    min-height: 432px;
+    padding: 52px 0 62px;
   }
 
   .hero-copy {
@@ -1570,6 +1640,10 @@ td.miss {
     grid-template-columns: 1fr;
   }
 
+  .matrix-stack {
+    grid-template-columns: 1fr;
+  }
+
   .method-grid {
     gap: 42px;
   }
@@ -1605,12 +1679,12 @@ td.miss {
   }
 
   .hero {
-    min-height: 590px;
+    min-height: 500px;
   }
 
   .hero-inner {
-    min-height: 514px;
-    padding: 60px 0 72px;
+    min-height: 424px;
+    padding: 44px 0 52px;
   }
 
   .hero h1 {
