@@ -1,0 +1,43 @@
+{
+  "candidate_id": "rht-20260731-20261013T132801Z",
+  "built_at_utc": "2026-10-13T13:28:01.358625+00:00",
+  "source_cutoffs": {
+    "proposal_abstracts": "December 2025",
+    "reported_obligations": "2026-07-31"
+  },
+  "classification_review_status": "First-pass analyst coding; independent second-coder adjudication pending",
+  "website_design_status": "Existing visual design preserved; targeted title and compact State Map updates applied",
+  "commands": [
+    "python analyze_obligations.py",
+    "python create_leadership_package.py",
+    "python refresh_website_data.py"
+  ],
+  "runtime": {
+    "python": "3.14.7",
+    "platform": "Windows-11-10.0.22631-SP0"
+  },
+  "inputs": {
+    "intake/rht-program-state-provided-abstracts.pdf": "a172a78c4b59f039c3745b559a7fd0be4b6ab1bd4a874341c846d073f8e68e58",
+    "intake/RHTP-Obligated-Funds-10082026.pdf": "abee94e70a09eb2c6b1e9298c3123ab158b5ac8db0c39112479abb3532f15cbe",
+    "working/state_review.tsv": "a3f8aa218dd3bdc9b8719720424c6787faa7520eeebfc3e6841ed81765c290ea",
+    "inputs/RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4"
+  },
+  "scripts": {
+    "analyze_obligations.py": "dca6c2cbcdb3e5072c2fc9a43ddadecaf3af7409128527273f1ff1683970a31d",
+    "reconcile_sources.py": "9431bfab79fd09bf3d7d09d2f13c046e4bb6b25333e2cb025e15425492f17706",
+    "create_leadership_package.py": "73a355dc3c393968d10e6d7d1161d25450dc9e52d2fbaec97db8da6b1887a080",
+    "refresh_website_data.py": "f669bdcc27d64f599364a83cd630254826a5218f8cf72b72872fcf31f8251ce6",
+    "prepare_coding_review.py": "b46675c2ceda31bfff8978cc5829fbde788ad0cc9a21bb4a4cd842c484e3a68c"
+  },
+  "outputs": {
+    "RHT_50_State_Data.csv": "8dde1efb8cb9861da65b4fd85246624298b773bcef408c205dc659d00f6e1cea",
+    "RHT_50_State_Inventory.xlsx": "1ae0e510e086a0f99c90777fb608b0410e389250aa94c279c8ebccc130377880",
+    "RHT_50_State_Leadership_Report.pdf": "dc8c2a93a064294533369a930a091d73417c4fdbc41720895e4ad28f18cdeec5",
+    "RHT_Heat_Map_MB.pdf": "edf425e3fac31e91fa88a21211835214bec33bd45aeaac5eb369fadeac579602",
+    "RHT_State_Theme_Reconciliation.csv": "3acff9e0badd6fd66a5149b63f7d32545caaec773519790c0a13697e2edc8466",
+    "RHT_State_Technology_Reconciliation.csv": "0efbda231ba455250d1d497d021138c38618aee9d57d7edc19c31ac1ea89a340",
+    "RHT_Care_Area_Technology_Reconciliation.csv": "84a21bc819888b087dd9c2013c8a3fe41215e1abddb69cd325dfc038386d5989",
+    "RHT_Reconciliation_Summary.csv": "2ad31d25f355ab69c103edc26c9435833a672e1020c57b84f9dc55f8a9529fbb",
+    "RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4"
+  }
+}

@@ -270,6 +270,11 @@ a:hover {
   font-weight: 400;
 }
 
+.hero h1.hero-title-long {
+  font-size: clamp(43px, 4.1vw, 54px);
+  line-height: 1.02;
+}
+
 .hero-dek {
   max-width: 620px;
   margin: 0 0 24px;
@@ -800,8 +805,8 @@ summary:focus-visible {
 
 .map-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.7fr) minmax(230px, 0.85fr);
-  gap: 20px;
+  grid-template-columns: minmax(0, 1.65fr) minmax(255px, 0.85fr);
+  gap: 16px;
   align-items: stretch;
 }
 
@@ -809,7 +814,7 @@ summary:focus-visible {
   width: 100%;
   min-width: 0;
   overflow: hidden;
-  padding: 6px;
+  padding: 5px;
   border-radius: 13px;
   background: linear-gradient(180deg, #f3f4ef, #ecefe9);
   scrollbar-color: #9aacaa transparent;
@@ -827,10 +832,10 @@ summary:focus-visible {
   max-width: 100%;
   min-width: 0;
   grid-template-columns: repeat(12, minmax(0, 1fr));
-  grid-template-rows: repeat(8, 44px);
-  gap: 5px;
+  grid-template-rows: repeat(8, 40px);
+  gap: 4px;
   overflow: hidden;
-  padding: 5px;
+  padding: 4px;
 }
 
 .tile {
@@ -882,7 +887,7 @@ summary:focus-visible {
 .state-card {
   min-width: 0;
   min-height: 100%;
-  padding: 18px;
+  padding: 16px;
   border: 1px solid rgba(16, 43, 50, 0.13);
   border-top: 4px solid var(--teal);
   border-radius: 14px;
@@ -927,9 +932,41 @@ summary:focus-visible {
   line-height: 1.55;
 }
 
+.state-card .state-summary {
+  display: -webkit-box;
+  overflow: hidden;
+  margin-bottom: 10px;
+  font-size: 10.5px;
+  line-height: 1.4;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
 .state-card .state-source {
-  padding-bottom: 12px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   border-bottom: 1px solid rgba(16, 43, 50, 0.12);
+}
+
+.state-focuses {
+  margin-top: 10px;
+}
+
+.state-focuses .control-label {
+  margin: 0 0 7px;
+}
+
+.state-focus-capsules {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.state-focus-capsules .badge {
+  margin: 0;
+  padding: 3px 6px;
+  font-size: 8px;
+  line-height: 1.2;
 }
 
 .state-signals {
@@ -943,6 +980,15 @@ summary:focus-visible {
   margin-bottom: 5px;
   color: var(--ink);
   font-size: 10px;
+}
+
+.state-signal small,
+.state-signal a {
+  display: block;
+  margin: 5px 2px 2px;
+  color: var(--ink-soft);
+  font-size: 9px;
+  line-height: 1.4;
 }
 
 .badge,
@@ -1212,6 +1258,10 @@ summary:focus-visible {
   background: var(--teal);
 }
 
+.heat-swatch.both {
+  background: #315e7d;
+}
+
 .heat-swatch.technology {
   background: var(--orange);
 }
@@ -1398,11 +1448,16 @@ td.miss {
 }
 
 .heat-cell {
-  display: block;
+  display: grid;
+  place-items: center;
   width: 59px;
   height: 20px;
   border: 1px solid rgba(16, 43, 50, 0.08);
   border-radius: 2px;
+  color: white;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: 0.02em;
   transition: filter 0.14s ease, transform 0.14s ease;
 }
 
@@ -1419,6 +1474,28 @@ td.miss {
 .heat-cell.miss {
   border-color: #d9e0dd;
   background: #e4e9e7;
+  color: #596c6d;
+}
+
+.heat-cell.both,
+.status.both {
+  border-color: #315e7d;
+  background: #315e7d;
+  color: white;
+}
+
+.heat-cell.abstract-only,
+.status.abstract-only {
+  border-color: var(--teal);
+  background: var(--teal);
+  color: white;
+}
+
+.heat-cell.obligation-only,
+.status.obligation-only {
+  border-color: var(--orange);
+  background: var(--orange);
+  color: white;
 }
 
 .matrix-card td:hover .heat-cell {
@@ -1428,6 +1505,23 @@ td.miss {
 
 .unified-heatmap-card .matrix-note {
   margin: 15px 22px 18px;
+}
+
+.focus-evidence {
+  display: grid;
+  gap: 7px;
+  margin: 13px 0;
+  padding: 12px;
+  border: 1px solid rgba(16, 43, 50, 0.12);
+  border-radius: 4px;
+  background: #f7faf9;
+}
+
+.focus-evidence a,
+.focus-evidence small {
+  display: block;
+  font-size: 9px;
+  line-height: 1.45;
 }
 
 /* State digest */

@@ -4,6 +4,8 @@
 
 An interactive, source-transparent review of how every state proposed using the Rural Health Transformation Program and what states reported as initially obligated through July 31, 2026.
 
+The classifications remain first-pass analyst coding without independent second-coder adjudication. They should not be described as final validated research coding until that review is completed.
+
 ## Explore the atlas
 
 [![Preview of the Initial Investments in Rural Health Transformation website](atlas-preview.jpg)](https://mbvibecode.github.io/rht-state-atlas/)
@@ -59,6 +61,7 @@ Broad categories such as `IT Advances` and `Consumer Tech Solutions` are not use
 - [Presentation and heat-map package](RHT_Heat_Map_MB.pdf)
 - [Excel evidence inventory](RHT_50_State_Inventory.xlsx)
 - [50-state proposal coding and financial context](RHT_50_State_Data.csv)
+- [Build manifest and SHA-256 provenance](RHT_Build_Manifest.json)
 
 ## Public source reports
 
@@ -72,6 +75,8 @@ Proposal classifications are analyst-curated from the state abstract compilation
 Care-area and technology linkage uses a stricter rule: the care area and named technology must appear in the same positive-dollar line-item/category segment, or a care-specific initiative title must govern the technology line item. State-level, page-level, or broad-initiative co-occurrence alone does not qualify.
 
 The project is descriptive and is not an official CMS rating, funding determination, or assessment of state performance.
+
+The state obligation notes are maintained as the controlled reviewed input `inputs/RHT_State_Obligation_Notes.csv`. The obligation analysis validates its schema and one-row-per-state coverage before publishing it to the deliverable and website packages.
 
 ## Static-site deployment
 
