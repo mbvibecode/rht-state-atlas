@@ -1,6 +1,6 @@
 {
-  "candidate_id": "rht-20260731-20261013T132801Z",
-  "built_at_utc": "2026-10-13T13:28:01.358625+00:00",
+  "candidate_id": "rht-20260731-20261013T133003Z",
+  "built_at_utc": "2026-10-13T13:30:03.473949+00:00",
   "source_cutoffs": {
     "proposal_abstracts": "December 2025",
     "reported_obligations": "2026-07-31"
@@ -26,7 +26,7 @@
     "analyze_obligations.py": "dca6c2cbcdb3e5072c2fc9a43ddadecaf3af7409128527273f1ff1683970a31d",
     "reconcile_sources.py": "9431bfab79fd09bf3d7d09d2f13c046e4bb6b25333e2cb025e15425492f17706",
     "create_leadership_package.py": "73a355dc3c393968d10e6d7d1161d25450dc9e52d2fbaec97db8da6b1887a080",
-    "refresh_website_data.py": "f669bdcc27d64f599364a83cd630254826a5218f8cf72b72872fcf31f8251ce6",
+    "refresh_website_data.py": "b320492c702d6381aff3a45c90d6388b8b2da4399ca942f56697ca033cbfe57b",
     "prepare_coding_review.py": "b46675c2ceda31bfff8978cc5829fbde788ad0cc9a21bb4a4cd842c484e3a68c"
   },
   "outputs": {
@@ -39,5 +39,10 @@
     "RHT_Care_Area_Technology_Reconciliation.csv": "84a21bc819888b087dd9c2013c8a3fe41215e1abddb69cd325dfc038386d5989",
     "RHT_Reconciliation_Summary.csv": "2ad31d25f355ab69c103edc26c9435833a672e1020c57b84f9dc55f8a9529fbb",
     "RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4"
+  },
+  "website_outputs": {
+    "index.html": "327886d61fcfc5ee9b2ac35a3c5694a36ef06c24d10a1ecfbe5f826b6d3ddb29",
+    "README.md": "0c75d8844d1b0dc844d192ffd5f714c59366812a76b108bdb0986aa3b5381e06",
+    "styles.css": "e15a477a494a4f4cdbad5caa0c720e5da5faf8188620e2a6a999ed591c275d45"
   }
 }
