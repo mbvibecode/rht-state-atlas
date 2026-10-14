@@ -1,23 +1,23 @@
 ﻿analysis_type,theme_or_technology,abstract_states,obligation_evidence_states,both_reports,abstract_only,obligation_only,neither_report
-Atlas theme,Workforce,50,39,39,11,0,0
+Atlas theme,Workforce,50,40,40,10,0,0
 Atlas theme,Prevention / chronic care,47,34,32,15,2,1
 Atlas theme,Behavioral health,34,29,19,15,10,6
-Atlas theme,Maternal / child health,25,16,14,11,2,23
-Atlas theme,EMS / emergency care,26,22,11,15,11,13
-Atlas theme,Telehealth / remote care,40,24,17,23,7,3
-Atlas theme,Health data / records,43,24,20,23,4,3
+Atlas theme,Maternal / child health,25,17,14,11,3,22
+Atlas theme,EMS / emergency care,28,26,16,12,10,12
+Atlas theme,Telehealth / remote care,40,25,17,23,8,2
+Atlas theme,Health data / records,43,29,24,19,5,2
 Atlas theme,Cybersecurity,12,5,2,10,3,35
 Atlas theme,AI / automation,12,11,2,10,9,29
-Atlas theme,Networks / coordination,47,34,32,15,2,1
-Atlas theme,Payment / financing,31,23,16,15,7,12
-Atlas theme,Home / long-term care,11,11,8,3,3,36
-Named technology,Telehealth / virtual care / e-consults,37,22,15,22,7,6
-Named technology,Remote patient monitoring,15,12,3,12,9,26
-Named technology,Electronic health records (EHR / EMR),13,15,5,8,10,27
+Atlas theme,Networks / coordination,49,37,36,13,1,0
+Atlas theme,Payment / financing,35,30,22,13,8,7
+Atlas theme,Home / long-term care,12,18,9,3,9,29
+Named technology,Telehealth / virtual care / e-consults,37,23,15,22,8,5
+Named technology,Remote patient monitoring,16,12,3,13,9,25
+Named technology,Electronic health records (EHR / EMR),13,17,5,8,12,25
 Named technology,HIE / interoperability / data exchange,24,19,10,14,9,17
 Named technology,AI / robotics,12,11,2,10,9,29
 Named technology,Cybersecurity / cyber protection,12,5,2,10,3,35
-Named technology,Digital or closed-loop referrals,3,4,1,2,3,44
-Named technology,Consumer devices / wearables,6,2,0,6,2,42
+Named technology,Digital or closed-loop referrals,3,5,1,2,4,43
+Named technology,Consumer devices / wearables,1,1,0,1,1,48
 Care area + linked technology,Behavioral health + technology,10,10,3,7,7,33
-Care area + linked technology,Home / long-term care + technology,3,1,0,3,1,46
+Care area + linked technology,Home / long-term care + technology,3,3,0,3,3,44

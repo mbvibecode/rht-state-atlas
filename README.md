@@ -4,7 +4,7 @@
 
 An interactive, source-transparent review of how every state proposed using the Rural Health Transformation Program and what states reported as initially obligated through July 31, 2026.
 
-The classifications remain first-pass analyst coding without independent second-coder adjudication. They should not be described as final validated research coding until that review is completed.
+Coding review and adjudication were completed October 14, 2026. The original 373-row positive queue confirmed 372 classifications and rejected one false positive: generic patient-facing technology in New Hampshire was not treated as evidence of a consumer device or wearable. A supplemental review of classifications omitted by that positive-only queue confirmed 35 false negatives from explicit positive-dollar obligation evidence. The final inventory contains 407 obligation-positive classifications, all covered by the published adjudication trail.
 
 ## Explore the atlas
 
@@ -54,6 +54,10 @@ A **P-only** result is not a contradiction and does not mean the activity was ca
 
 Broad categories such as `IT Advances` and `Consumer Tech Solutions` are not used to infer AI, cybersecurity, telehealth, EHR, or another technology subtype unless the initiative or line-item language supports that interpretation.
 
+In the website matrix, hover, keyboard-focus, or tap any **P+O** or **O** cell to see its reported amount, a short example of the reported work, and the source page. A dollar figure is shown only when the report provides a matching official-category total; otherwise the tooltip says that no focus-specific total was separately itemized. Category totals can appear in more than one thematic cell and should not be added together.
+
+The State Evidence Digest focus filter uses that same reconciliation record as the matrix. Selecting a focus includes every state marked **P**, **O**, or **P+O**, and each resulting card displays its selected-focus status and any obligations-report source page. The search box further narrows those results and searches state names, proposal summaries, reviewed obligation notes, and positive reconciliation evidence.
+
 ## Main public files
 
 - [Interactive website](index.html)
@@ -62,6 +66,8 @@ Broad categories such as `IT Advances` and `Consumer Tech Solutions` are not use
 - [Excel evidence inventory](RHT_50_State_Inventory.xlsx)
 - [50-state proposal coding and financial context](RHT_50_State_Data.csv)
 - [Build manifest and SHA-256 provenance](RHT_Build_Manifest.json)
+- [Independent coding adjudication](RHT_Coding_Adjudication.csv)
+- [Coding-review summary](RHT_Coding_Adjudication_Summary.csv)
 
 ## Public source reports
 
@@ -77,6 +83,8 @@ Care-area and technology linkage uses a stricter rule: the care area and named t
 The project is descriptive and is not an official CMS rating, funding determination, or assessment of state performance.
 
 The state obligation notes are maintained as the controlled reviewed input `inputs/RHT_State_Obligation_Notes.csv`. The obligation analysis validates its schema and one-row-per-state coverage before publishing it to the deliverable and website packages.
+
+The review trail is maintained in `inputs/RHT_Coding_Adjudication.csv`, embedded in the Excel inventory, and published as a source-separated download. It contains both the original positive-queue review and the supplemental negative-gap corrections. The build fails if the current set of obligation-positive theme, named-technology, and care-area-linkage classifications does not exactly match the final positive adjudications.
 
 ## Static-site deployment
 

@@ -1,11 +1,11 @@
 {
-  "candidate_id": "rht-20260731-20261013T133003Z",
-  "built_at_utc": "2026-10-13T13:30:03.473949+00:00",
+  "candidate_id": "rht-20260731-20261014T173402Z",
+  "built_at_utc": "2026-10-14T17:34:02.087484+00:00",
   "source_cutoffs": {
     "proposal_abstracts": "December 2025",
     "reported_obligations": "2026-07-31"
   },
-  "classification_review_status": "First-pass analyst coding; independent second-coder adjudication pending",
+  "classification_review_status": "Original 373-row positive queue plus 35-row negative-gap audit completed 2026-10-14; 407 positive classifications are covered by adjudication",
   "website_design_status": "Existing visual design preserved; targeted title and compact State Map updates applied",
   "commands": [
     "python analyze_obligations.py",
@@ -17,32 +17,56 @@
     "platform": "Windows-11-10.0.22631-SP0"
   },
   "inputs": {
+    "intake/1_8kJNil6z8igp6-M2do5e4A.jpg": "a1758bb37be79caff7f2ab597a32d040302d998d5ffb757c08f235410c2c19b0",
+    "intake/5-year-service-commitment-fact-sheet.pdf": "bb05097ecfe5aceefdd6374e8614de0e39aa78149ef6d09da378a255c8fbb5bc",
+    "intake/capital-expenditures-fact-sheet-category-j-payments.pdf": "0f44554eeb047719c8f8cc8bde18cf2a04ba51ac19db425113d2541d6b9d087e",
+    "intake/CatE-Workforce-Info-Guide.pdf": "71f173d5c4c6b9ce6ebcf8a2912c3ba72d41ae2431e33eeeb5c2be42a7bd9e86",
+    "intake/HOW-TO-MAKE-AN-INFOGRAPHIC-IN-5-STEPS.png": "4b5e31438848f7ffcd1a34aaea6a8e3d7e9069ec122fe76a6548d8849e00c7cd",
+    "intake/images.jfif": "e0210338a3192211239181a778f2db93330de9b9f4bc2c6d7241c88549ac2f1f",
+    "intake/index.html": "5bb2b33f61338de3e99cdbb4c6e9a07f01ec0feb1d97be6be1e29c66ba1611c4",
+    "intake/Infographic-scaled.jpg": "4a2ea55d3c502aaf0f58e31e8386ab13a57606e93a7644aaf1fb83cd075db054",
+    "intake/infographic1.jpeg": "a434992081f4560d1542c084ad769ddfb196de1e0f12a31e470353abb8e48a8d",
+    "intake/information-info.webp": "dce1ceb4d522d78c4c34f5292912814612a142a5a69a5f5689d4fd37f7da11f8",
+    "intake/press release.xlsx": "84c4a1ac5756a83d56c2e0ce90d16651d13316474d2ea7afadc7410166a31d64",
+    "intake/provider-payments-fact-sheet.pdf": "6743859acdf335e49cd9d9d8cb6178d6907509e08effcb95139efc3c8d14d7a2",
+    "intake/PUBLISH_INDEX_HTML.md": "0b8fa02e6729e514e8bce7ed18aad193e973d6f7d5e8639f100bb9a4709c25d6",
+    "intake/RHT tech integration_MBMR.docx": "841e48eefbd61e035ae46729ebaf05dfc94491700fec4cdd738e71f0ac3dc511",
     "intake/rht-program-state-provided-abstracts.pdf": "a172a78c4b59f039c3745b559a7fd0be4b6ab1bd4a874341c846d073f8e68e58",
     "intake/RHTP-Obligated-Funds-10082026.pdf": "abee94e70a09eb2c6b1e9298c3123ab158b5ac8db0c39112479abb3532f15cbe",
-    "working/state_review.tsv": "a3f8aa218dd3bdc9b8719720424c6787faa7520eeebfc3e6841ed81765c290ea",
-    "inputs/RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4"
+    "intake/rural-health-resource-guide.pdf": "00ebfd4fb55f1d7c21ba909aa0bb00dbf80946aee952efaec9839521173d842d",
+    "intake/rural-tech-catalyst-fund-resource-guide.pdf": "7bcbc6de2856e6802c705cf71f67705b3b03e1c12b77e6fcb52589f83be284ef",
+    "working/state_review.tsv": "aa24c82ce98256b9b05ad5e09412e0f877580b8019c137e451860a14e01c297c",
+    "inputs/RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4",
+    "inputs/RHT_Coding_Adjudication.csv": "f1cc7f87cc7f820fdccd49a20e33a932295590661843eab59378ffa7cb20f4df",
+    "inputs/RHT_Coding_Adjudication_Summary.csv": "702f987d58e4edca7b8193a419cfa31266a44cc71a307aa849b1a92b3bc25d28"
   },
   "scripts": {
-    "analyze_obligations.py": "dca6c2cbcdb3e5072c2fc9a43ddadecaf3af7409128527273f1ff1683970a31d",
-    "reconcile_sources.py": "9431bfab79fd09bf3d7d09d2f13c046e4bb6b25333e2cb025e15425492f17706",
-    "create_leadership_package.py": "73a355dc3c393968d10e6d7d1161d25450dc9e52d2fbaec97db8da6b1887a080",
-    "refresh_website_data.py": "b320492c702d6381aff3a45c90d6388b8b2da4399ca942f56697ca033cbfe57b",
-    "prepare_coding_review.py": "b46675c2ceda31bfff8978cc5829fbde788ad0cc9a21bb4a4cd842c484e3a68c"
+    "analyze_obligations.py": "b660817f0406ff1fc43224a930d9db9b034add9fc6aa0a91f43fcc621eafa19f",
+    "reconcile_sources.py": "ccc202935a50050e85c7a98b984c5652378d29fc3f9ade0c560d8e46e09c82d3",
+    "create_leadership_package.py": "6b81ae7b2e470f8e0d0959cda146773a52fc4902249392520b21249c5c6c09a2",
+    "create_one_page_brief.py": "a98ad6b968b4ba70e437cc65fc2faae22d936fbe88640d56a100a93600e1f8b1",
+    "refresh_website_data.py": "13077a6372c43cf8c6e8444e31be658bb28abbf65b8ee73192c0ec0d86bffdbf",
+    "prepare_coding_review.py": "25431e2dd75ffabdbdb1ce1eae6ec5e8419cae8dc0c41c3b08c9ba0271ec6914",
+    "complete_coding_review.py": "db4377391ffb85486d50f889ece9f2b89a50d91f8b76cccd2447a9bd67f2b977",
+    "working/apply_gap_adjudication.py": "bf764fd9952a0f659b404efb45e66395e82af939608cf1dc78ce5a91ece1551e",
+    "working/validate_reconciliation_fix.py": "d2d962acccb529c66ff3488f2c9729e5ed0c6b8cd1cd6feba62ddbe1c904d11d"
   },
   "outputs": {
-    "RHT_50_State_Data.csv": "8dde1efb8cb9861da65b4fd85246624298b773bcef408c205dc659d00f6e1cea",
-    "RHT_50_State_Inventory.xlsx": "1ae0e510e086a0f99c90777fb608b0410e389250aa94c279c8ebccc130377880",
-    "RHT_50_State_Leadership_Report.pdf": "dc8c2a93a064294533369a930a091d73417c4fdbc41720895e4ad28f18cdeec5",
-    "RHT_Heat_Map_MB.pdf": "edf425e3fac31e91fa88a21211835214bec33bd45aeaac5eb369fadeac579602",
-    "RHT_State_Theme_Reconciliation.csv": "3acff9e0badd6fd66a5149b63f7d32545caaec773519790c0a13697e2edc8466",
-    "RHT_State_Technology_Reconciliation.csv": "0efbda231ba455250d1d497d021138c38618aee9d57d7edc19c31ac1ea89a340",
-    "RHT_Care_Area_Technology_Reconciliation.csv": "84a21bc819888b087dd9c2013c8a3fe41215e1abddb69cd325dfc038386d5989",
-    "RHT_Reconciliation_Summary.csv": "2ad31d25f355ab69c103edc26c9435833a672e1020c57b84f9dc55f8a9529fbb",
-    "RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4"
+    "RHT_50_State_Data.csv": "9aadebd2fb585b3af788f082a221d666e617e3a55652d664a195020d0fdb2bda",
+    "RHT_50_State_Inventory.xlsx": "ef72d7c93fd32ed5323ef4b931b7ee2d1856c4978284d720dad35f098e08e717",
+    "RHT_50_State_Leadership_Report.pdf": "ab744addc489ad88031dca33aaa23ac3a4782092610c24b4310ea07c3efeb41e",
+    "RHT_Heat_Map_MB.pdf": "26183ddbcf2dc197fd4cc6866fe403a33f49aa2549a0be4d8fe8bf820c55369b",
+    "RHT_State_Theme_Reconciliation.csv": "ba21e351a8e27802af5f2780c586ec8885553d66b51db03e8c46df8424a02594",
+    "RHT_State_Technology_Reconciliation.csv": "845ed59d7df92cb640673479a9fe48bddf9daee85918f5f2aa4aab5e52d7921f",
+    "RHT_Care_Area_Technology_Reconciliation.csv": "f7d48ce5d9f4bea28d96808b1a5bff1ba32ff3f3cd4c2336577a3d0cad63600b",
+    "RHT_Reconciliation_Summary.csv": "e2482a5a7359f1719ea8527841c34b2485ef4d0479b62abcf0292bc122baade2",
+    "RHT_State_Obligation_Notes.csv": "b4d8c11fd250743f0e2fdc9ea2b53003b5b9841b0b2edbb03bd8d83e600acae4",
+    "RHT_Coding_Adjudication.csv": "f1cc7f87cc7f820fdccd49a20e33a932295590661843eab59378ffa7cb20f4df",
+    "RHT_Coding_Adjudication_Summary.csv": "702f987d58e4edca7b8193a419cfa31266a44cc71a307aa849b1a92b3bc25d28"
   },
   "website_outputs": {
-    "index.html": "327886d61fcfc5ee9b2ac35a3c5694a36ef06c24d10a1ecfbe5f826b6d3ddb29",
-    "README.md": "0c75d8844d1b0dc844d192ffd5f714c59366812a76b108bdb0986aa3b5381e06",
-    "styles.css": "e15a477a494a4f4cdbad5caa0c720e5da5faf8188620e2a6a999ed591c275d45"
+    "index.html": "60e761f866cbd1bed2bd3f437e1c1347f68d9ed79da3b049e5c2941fb184ee2e",
+    "README.md": "13a914fb9686a88017cc3b0bcda809e290ce5c8227dcdd3d5cf9cb66dc8e7339",
+    "styles.css": "7c1cd1d2ea220fee055f756e071f3f6c4d80bba06ae09355e36bf3e0c836e89d"
   }
 }

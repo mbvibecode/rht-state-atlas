@@ -1,0 +1,10 @@
+﻿measure,value
+Original frozen positive-queue rows reviewed,373
+Supplemental negative classifications reviewed,35
+Total adjudication records,408
+Original agreements,372
+False-positive corrections,1
+False-negative corrections,35
+Final positive classifications expected,407
+Final negative adjudications retained,1
+Review date,2026-10-14
