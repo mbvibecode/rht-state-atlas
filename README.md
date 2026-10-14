@@ -10,7 +10,7 @@ Coding review and adjudication were completed October 14, 2026. The original 373
 
 [![Preview of the Initial Investments in Rural Health Transformation website](atlas-preview.jpg)](https://mbvibecode.github.io/rht-state-atlas/)
 
-The State Map is intentionally proposal-focused. Teal capsules identify proposed program areas, orange capsules identify proposed technology areas, and gray means the selected area was not named in the abbreviated state abstract.
+The State Map, cross-state summary bars, comparison heat map, and State Evidence Digest all use the same adjudicated reconciliation record. Blue means **P+O**, teal means **P**, orange means **O**, and gray means the focus was not explicit in either supplied report.
 
 ## View the leadership infographic
 
@@ -56,7 +56,7 @@ Broad categories such as `IT Advances` and `Consumer Tech Solutions` are not use
 
 In the website matrix, hover, keyboard-focus, or tap any **P+O** or **O** cell to see its reported amount, a short example of the reported work, and the source page. A dollar figure is shown only when the report provides a matching official-category total; otherwise the tooltip says that no focus-specific total was separately itemized. Category totals can appear in more than one thematic cell and should not be added together.
 
-The State Evidence Digest focus filter uses that same reconciliation record as the matrix. Selecting a focus includes every state marked **P**, **O**, or **P+O**, and each resulting card displays its selected-focus status and any obligations-report source page. The search box further narrows those results and searches state names, proposal summaries, reviewed obligation notes, and positive reconciliation evidence.
+The State Map, “Across both reports” bars, heat map, and State Evidence Digest use that same reconciliation record. Selecting a focus therefore produces the same state count and P / O / P+O classification in every view. Each matching state card displays its selected-focus status and any obligations-report source page; search terms further narrow those results.
 
 ## Main public files
 

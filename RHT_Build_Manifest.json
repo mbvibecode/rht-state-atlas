@@ -1,12 +1,12 @@
 {
-  "candidate_id": "rht-20260731-20261014T173402Z",
-  "built_at_utc": "2026-10-14T17:34:02.087484+00:00",
+  "candidate_id": "rht-20260731-20261014T174956Z",
+  "built_at_utc": "2026-10-14T17:49:56.492234+00:00",
   "source_cutoffs": {
     "proposal_abstracts": "December 2025",
     "reported_obligations": "2026-07-31"
   },
   "classification_review_status": "Original 373-row positive queue plus 35-row negative-gap audit completed 2026-10-14; 407 positive classifications are covered by adjudication",
-  "website_design_status": "Existing visual design preserved; targeted title and compact State Map updates applied",
+  "website_design_status": "State Map, cross-state summaries, heat map, and State Evidence Digest use the same adjudicated reconciliation payload",
   "commands": [
     "python analyze_obligations.py",
     "python create_leadership_package.py",
@@ -45,7 +45,7 @@
     "reconcile_sources.py": "ccc202935a50050e85c7a98b984c5652378d29fc3f9ade0c560d8e46e09c82d3",
     "create_leadership_package.py": "6b81ae7b2e470f8e0d0959cda146773a52fc4902249392520b21249c5c6c09a2",
     "create_one_page_brief.py": "a98ad6b968b4ba70e437cc65fc2faae22d936fbe88640d56a100a93600e1f8b1",
-    "refresh_website_data.py": "13077a6372c43cf8c6e8444e31be658bb28abbf65b8ee73192c0ec0d86bffdbf",
+    "refresh_website_data.py": "a150906261237ffa32808aebb7516f96aca0307e8c35b384b00ff5c88a69508a",
     "prepare_coding_review.py": "25431e2dd75ffabdbdb1ce1eae6ec5e8419cae8dc0c41c3b08c9ba0271ec6914",
     "complete_coding_review.py": "db4377391ffb85486d50f889ece9f2b89a50d91f8b76cccd2447a9bd67f2b977",
     "working/apply_gap_adjudication.py": "bf764fd9952a0f659b404efb45e66395e82af939608cf1dc78ce5a91ece1551e",
@@ -65,8 +65,8 @@
     "RHT_Coding_Adjudication_Summary.csv": "702f987d58e4edca7b8193a419cfa31266a44cc71a307aa849b1a92b3bc25d28"
   },
   "website_outputs": {
-    "index.html": "60e761f866cbd1bed2bd3f437e1c1347f68d9ed79da3b049e5c2941fb184ee2e",
-    "README.md": "13a914fb9686a88017cc3b0bcda809e290ce5c8227dcdd3d5cf9cb66dc8e7339",
-    "styles.css": "7c1cd1d2ea220fee055f756e071f3f6c4d80bba06ae09355e36bf3e0c836e89d"
+    "index.html": "4ac620fe7a9c7a6d4020518bbb2fa2430bb08d2f37760f227423741b8c8ae243",
+    "README.md": "20d7bb3f65573079803b2d7a709de652dcd92d3adf2c862e6aaa7c80103a2c97",
+    "styles.css": "783e164d23f72580996e156370aa1b7611624d6be23f7d803d248d53e962f6e9"
   }
 }
